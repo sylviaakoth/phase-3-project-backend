@@ -12,6 +12,10 @@ puts "🌱 Seeding spices..."
         gender: Faker::Gender.gender,
         dob: Faker::Time.date
     )
+    appointment = Appointment.create(
+        patients_id: patient.id,
+        doctors_id: doctor.id
+    )
 end
 
 puts "✅ Done seeding!"
