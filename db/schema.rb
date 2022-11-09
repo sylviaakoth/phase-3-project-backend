@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_09_103920) do
+ActiveRecord::Schema.define(version: 2022_11_09_104123) do
+
+  create_table "appointments", force: :cascade do |t|
+    t.integer "doctors_id"
+    t.integer "patients_id"
+  end
 
   create_table "doctors", force: :cascade do |t|
     t.string "name"
