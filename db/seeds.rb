@@ -6,6 +6,12 @@ puts "🌱 Seeding spices..."
         name: Faker::Name.name, 
         contact: Faker::Contact.contact
     )
+    patient = Patient.create(
+        first_name: Faker::Name.first_name,
+        last_name: Faker::Name.last_name,
+        gender: Faker::Gender.gender,
+        dob: Faker::Time.date
+    )
 end
 
 puts "✅ Done seeding!"
