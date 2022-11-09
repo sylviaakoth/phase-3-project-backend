@@ -96,7 +96,7 @@ collaborate, if you're working with a partner.
 ### Fetch Example
 
 Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
+example;
 
 ```js
 fetch("http://localhost:9292/test")
