@@ -1,4 +1,4 @@
-class CreateSpecialistTable < ActiveRecord::Migration[6.1]
+class CreateSpecialistsTable < ActiveRecord::Migration[6.1]
   def change
     create_table :specialists do |t|
       t.string :speciality

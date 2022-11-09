@@ -15,7 +15,7 @@ The focus of this project is **building a Sinatra API backend** that uses
 **Active Record** to access and persist data in a database, which will be used
 by a separate **React frontend** that interacts with the database via the API.
 
-## Requirements
+## Requirements is ours now
 
 For this project, you must:
 
@@ -96,7 +96,7 @@ collaborate, if you're working with a partner.
 ### Fetch Example
 
 Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
+example;
 
 ```js
 fetch("http://localhost:9292/test")
