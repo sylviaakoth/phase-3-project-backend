@@ -18,4 +18,11 @@ puts "🌱 Seeding spices..."
     )
 end
 
+Specialist.create(speciality: "dentist")
+Specialist.create(speciality: "pediatrician")
+Specialist.create(speciality: "ophthalmologist")
+Specialist.create(speciality: "cardiologist")
+Specialist.create(speciality: "neurologist")
+Specialist.create(speciality: "dermatologist")
+
 puts "✅ Done seeding!"
