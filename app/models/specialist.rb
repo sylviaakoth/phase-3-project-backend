@@ -1,3 +1,3 @@
-class Specialist < ActiveRecord::Base
-   belongs_to :doctor
-end
+# class Specialist < ActiveRecord::Base
+#    # belongs_to :doctor
+# end
