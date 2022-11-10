@@ -28,8 +28,8 @@ puts "Done deleting"
         # appointment_id: Appointment.id
     )
     appointment = Appointment.create(
-        patients_id: patient.id,
-        doctors_id: doctor.id
+        patient_id: patient.id,
+        doctor_id: doctor.id
     )
 end
 
