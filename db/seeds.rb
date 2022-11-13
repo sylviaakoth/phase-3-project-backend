@@ -9,10 +9,6 @@ Appointment.destroy_all
 
 puts "Done deleting"
 
-# SET @num := 0;
-# UPDATE your_table SET id = @num := (@num+1);
-# ALTER TABLE tableName AUTO_INCREMENT = 1;
-
 6.times do
     doctor = Doctor.create(
         name: Faker::Name.name, 
@@ -27,11 +23,19 @@ puts "Done deleting"
         age: rand(10..50),
         # appointment_id: Appointment.id
     )
-    # appointment = Appointment.create(
-    #     patient_id: patient.id,
-    #     doctor_id: doctor.id
-    # )
+   
 end
+
+Appointment.create(doctor_id: 3, patient_id: 4)
+Appointment.create(doctor_id: 3, patient_id: 3)
+Appointment.create(doctor_id: 2, patient_id: 1)
+Appointment.create(doctor_id: 1, patient_id: 2)
+Appointment.create(doctor_id: 4, patient_id: 2)
+Appointment.create(doctor_id: 5, patient_id: 1)
+Appointment.create(doctor_id: 5, patient_id: 4)
+Appointment.create(doctor_id: 3, patient_id: 2)
+
+
 # dentist, pediatrician, ophthalmologist, cardiologist,neurologist,dermatologist,psychiatrist
 
 # Specialist.create(specialist: "dentist", doctor_id: 1)
